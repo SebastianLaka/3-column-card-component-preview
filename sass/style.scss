@@ -8,3 +8,29 @@ body{
     font-family: 'Montserrat', sans-serif;
     height: 100vh;   
 }
+
+.card{
+    display: flex;
+
+    flex-direction: row;
+    width: 1000px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .sedans{
+       background-color: $sedans-color; 
+
+       &__img{
+        padding: 2em 4em;
+       }
+    }
+
+    .suvs{
+       background-color: $suvs-color; 
+    }
+
+    .luxury{
+        background-color: $luxury-color;
+    }
+}
