@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,7 +19,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   height: 100vh;
 }
 
@@ -27,25 +31,105 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 1000px;
-  height: 400px;
+  width: 950px;
+  height: 500px;
   border-radius: 10px;
   overflow: hidden;
 }
 
-.card .sedans {
+.card .sedans,
+.card .suvs,
+.card .luxury {
   background-color: #ff8413;
 }
 
-.card .sedans__img {
-  padding: 2em 4em;
+.card .sedans__img,
+.card .suvs__img,
+.card .luxury__img {
+  padding: 4em 4.5em;
+  text-shadow: 1px 1px 1px 1px #fff;
+}
+
+.card .sedans__header,
+.card .suvs__header,
+.card .luxury__header {
+  padding: 0 1em;
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.card .sedans__info,
+.card .suvs__info,
+.card .luxury__info {
+  padding: 2em 2.7em;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 160%;
+  color: #f8ca98;
+}
+
+.card .sedans__button,
+.card .suvs__button,
+.card .luxury__button {
+  padding: 1.1em 2.3em;
+  margin: 3.5em 2.5em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 40px;
+  color: #ff8413;
+  -webkit-transition: border 0.3s, background-color 0.3s, color 0.3s;
+  transition: border 0.3s, background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.card .sedans__button:hover,
+.card .suvs__button:hover,
+.card .luxury__button:hover {
+  border: 2px solid #fff;
+  background-color: #ff8413;
+  color: #fff;
 }
 
 .card .suvs {
   background-color: #008080;
 }
 
+.card .suvs__info {
+  color: #b5dde0;
+}
+
+.card .suvs__button {
+  color: #008080;
+  -webkit-transition: border 0.3s, background-color 0.3s, color 0.3s;
+  transition: border 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.card .suvs__button:hover {
+  border: 2px solid #fff;
+  background-color: #008080;
+  color: #fff;
+}
+
 .card .luxury {
   background-color: #025353;
+}
+
+.card .luxury__info {
+  color: #98bdbc;
+}
+
+.card .luxury__button {
+  color: #025353;
+  -webkit-transition: border 0.3s, background-color 0.3s, color 0.3s;
+  transition: border 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.card .luxury__button:hover {
+  border: 2px solid #fff;
+  background-color: #025353;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
