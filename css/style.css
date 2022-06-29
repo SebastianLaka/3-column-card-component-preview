@@ -47,14 +47,13 @@ body {
 .card .suvs__img,
 .card .luxury__img {
   padding: 4em 4.5em;
-  text-shadow: 1px 1px 1px 1px #fff;
 }
 
 .card .sedans__header,
 .card .suvs__header,
 .card .luxury__header {
   padding: 0 1em;
-  font-family: 'Big Shoulders Display', sans-serif;
+  font-family: "Big Shoulders Display", sans-serif;
   font-size: 4rem;
   text-transform: uppercase;
   color: #fff;
@@ -64,7 +63,7 @@ body {
 .card .suvs__info,
 .card .luxury__info {
   padding: 2em 2.7em;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 500;
   line-height: 160%;
   color: #f8ca98;
@@ -131,5 +130,80 @@ body {
   border: 2px solid #fff;
   background-color: #025353;
   color: #fff;
+}
+
+@media (min-width: 200px) {
+  body {
+    height: 150vh;
+  }
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 960px;
+    width: 230px;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+  .card .sedans,
+  .card .suvs,
+  .card .luxury {
+    height: 320px;
+  }
+  .card .sedans__img,
+  .card .suvs__img,
+  .card .luxury__img {
+    padding: 0;
+    margin: 2.8em 2.8em;
+    width: 44px;
+  }
+  .card .sedans__header,
+  .card .suvs__header,
+  .card .luxury__header {
+    font-size: 2.5rem;
+    margin-left: .1em;
+  }
+  .card .sedans__info,
+  .card .suvs__info,
+  .card .luxury__info {
+    font-size: 1.1rem;
+  }
+  .card .sedans__button,
+  .card .suvs__button,
+  .card .luxury__button {
+    margin: 1em 3.5em;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 425px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 650px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    height: 100vh;
+  }
+  .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 1000px;
+    height: 500px;
+  }
+  .card .sedans,
+  .card .suvs,
+  .card .luxury {
+    height: 500px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

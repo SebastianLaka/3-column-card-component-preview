@@ -28,22 +28,20 @@ body {
 
     &__img {
       padding: 4em 4.5em;
-      text-shadow: 1px 1px 1px 1px $white;
     }
     &__header {
       padding: 0 1em;
-      font-family: 'Big Shoulders Display', sans-serif;
+      font-family: "Big Shoulders Display", sans-serif;
       font-size: 4rem;
       text-transform: uppercase;
       color: $white;
     }
     &__info {
       padding: 2em 2.7em;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       font-weight: 500;
       line-height: 160%;
       color: $dark-sedans-font-color;
-      
     }
 
     &__button {
@@ -68,7 +66,7 @@ body {
   .suvs {
     background-color: $suvs-color;
 
-    &__info{
+    &__info {
       color: $dark-suvs-font-color;
     }
 
@@ -87,7 +85,7 @@ body {
   .luxury {
     background-color: $luxury-color;
 
-    &__info{
+    &__info {
       color: $dark-luxury-font-color;
     }
 
@@ -99,6 +97,71 @@ body {
         background-color: $luxury-button-color;
         color: $white;
       }
+    }
+  }
+}
+
+@media (min-width: 200px) {
+  body {
+    height: 150vh;
+  }
+
+  .card {
+    flex-direction: column;
+    height: 960px;
+    width: 230px;
+    overflow: hidden;
+    border-radius: 6px;
+
+    .sedans,
+    .suvs,
+    .luxury {
+      height: 320px;
+
+      &__img {
+        padding: 0;
+        margin: 2.8em 2.8em;
+        width: 44px;
+      }
+
+      &__header  {
+        font-size: 2.5rem;
+        margin-left: .1em;
+      }
+
+      &__info {
+        font-size: 1.1rem;
+      }
+      &__button {
+        margin: 1em 3.5em;
+        
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 425px) {
+  .card {
+    flex-direction: column;
+    height: 650px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    height: 100vh;
+  }
+  .card {
+    flex-direction: row;
+    width: 1000px;
+    height: 500px;
+
+    .sedans,
+    .suvs,
+    .luxury {
+      height: 500px;
     }
   }
 }
