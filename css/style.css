@@ -52,7 +52,7 @@ body {
 .card .sedans__header,
 .card .suvs__header,
 .card .luxury__header {
-  padding: 0 1em;
+  padding: 0 0.9em;
   font-family: "Big Shoulders Display", sans-serif;
   font-size: 4rem;
   text-transform: uppercase;
@@ -73,7 +73,6 @@ body {
 .card .suvs__button,
 .card .luxury__button {
   padding: 1.1em 2.3em;
-  margin: 3.5em 2.5em;
   font-size: 1.5rem;
   font-weight: bold;
   border: none;
@@ -134,7 +133,7 @@ body {
 
 @media (min-width: 200px) {
   body {
-    height: 150vh;
+    height: 175vh;
   }
   .card {
     -webkit-box-orient: vertical;
@@ -162,7 +161,7 @@ body {
   .card .suvs__header,
   .card .luxury__header {
     font-size: 2.5rem;
-    margin-left: .1em;
+    margin-left: 0.1em;
   }
   .card .sedans__info,
   .card .suvs__info,
@@ -178,13 +177,159 @@ body {
 }
 
 @media (min-width: 425px) {
+  body {
+    height: 125vh;
+  }
   .card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 650px;
+    height: 1500px;
     width: 400px;
+  }
+  .card .sedans,
+  .card .suvs,
+  .card .luxury {
+    height: 500px;
+  }
+  .card .sedans__img,
+  .card .suvs__img,
+  .card .luxury__img {
+    margin: 4.8em;
+    width: 66px;
+  }
+  .card .sedans__header,
+  .card .suvs__header,
+  .card .luxury__header {
+    font-size: 4.5rem;
+    margin-left: 0.2em;
+  }
+  .card .sedans__info,
+  .card .suvs__info,
+  .card .luxury__info {
+    font-size: 1.8rem;
+    padding: 1.5em 3em;
+  }
+  .card .sedans__button,
+  .card .suvs__button,
+  .card .luxury__button {
+    margin: 1em 3em;
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 530px) {
+  body {
+    height: 150vh;
+  }
+  .card {
+    height: 1000px;
+    width: 250px;
+  }
+  .card .sedans,
+  .card .suvs,
+  .card .luxury {
+    height: 335px;
+  }
+  .card .sedans__img,
+  .card .suvs__img,
+  .card .luxury__img {
+    margin: 3em 3.5em;
+    width: 48px;
+  }
+  .card .sedans__header,
+  .card .suvs__header,
+  .card .luxury__header {
+    font-size: 3rem;
+    margin: 0 0.3em;
+  }
+  .card .sedans__info,
+  .card .suvs__info,
+  .card .luxury__info {
+    font-size: 1.2rem;
+    padding: 1.5em 2.1em;
+    margin-left: 1em;
+  }
+  .card .sedans__button,
+  .card .suvs__button,
+  .card .luxury__button {
+    font-size: 1rem;
+    margin: 1em 4em;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    height: 150vh;
+  }
+  .card {
+    height: 1350px;
+    width: 300px;
+  }
+  .card .sedans,
+  .card .suvs,
+  .card .luxury {
+    height: 450px;
+  }
+  .card .sedans .sedans,
+  .card .sedans .suvs,
+  .card .sedans .luxury,
+  .card .suvs .sedans,
+  .card .suvs .suvs,
+  .card .suvs .luxury,
+  .card .luxury .sedans,
+  .card .luxury .suvs,
+  .card .luxury .luxury {
+    height: 500px;
+  }
+  .card .sedans .sedans__img,
+  .card .sedans .suvs__img,
+  .card .sedans .luxury__img,
+  .card .suvs .sedans__img,
+  .card .suvs .suvs__img,
+  .card .suvs .luxury__img,
+  .card .luxury .sedans__img,
+  .card .luxury .suvs__img,
+  .card .luxury .luxury__img {
+    margin: 4em 4.4em;
+    width: 60px;
+  }
+  .card .sedans .sedans__header,
+  .card .sedans .suvs__header,
+  .card .sedans .luxury__header,
+  .card .suvs .sedans__header,
+  .card .suvs .suvs__header,
+  .card .suvs .luxury__header,
+  .card .luxury .sedans__header,
+  .card .luxury .suvs__header,
+  .card .luxury .luxury__header {
+    font-size: 4.5rem;
+    margin-left: 0.1em;
+  }
+  .card .sedans .sedans__info,
+  .card .sedans .suvs__info,
+  .card .sedans .luxury__info,
+  .card .suvs .sedans__info,
+  .card .suvs .suvs__info,
+  .card .suvs .luxury__info,
+  .card .luxury .sedans__info,
+  .card .luxury .suvs__info,
+  .card .luxury .luxury__info {
+    font-size: 1.4rem;
+    padding: 1.5em 2.1em;
+  }
+  .card .sedans .sedans__button,
+  .card .sedans .suvs__button,
+  .card .sedans .luxury__button,
+  .card .suvs .sedans__button,
+  .card .suvs .suvs__button,
+  .card .suvs .luxury__button,
+  .card .luxury .sedans__button,
+  .card .luxury .suvs__button,
+  .card .luxury .luxury__button {
+    font-size: 1.5rem;
+    margin: 2em 3em;
   }
 }
 
@@ -204,6 +349,29 @@ body {
   .card .suvs,
   .card .luxury {
     height: 500px;
+  }
+  .card .sedans__img,
+  .card .suvs__img,
+  .card .luxury__img {
+    margin: 4em;
+    width: 66px;
+  }
+  .card .sedans__header,
+  .card .suvs__header,
+  .card .luxury__header {
+    font-size: 4.5rem;
+    margin: 0;
+  }
+  .card .sedans__info,
+  .card .suvs__info,
+  .card .luxury__info {
+    font-size: 1.8rem;
+    margin: 0 4em 3em 1em;
+  }
+  .card .sedans__button,
+  .card .suvs__button,
+  .card .luxury__button {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
