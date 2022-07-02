@@ -10,12 +10,13 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .card {
   display: flex;
   flex-direction: row;
+  margin: 1em 0;
   width: 950px;
   height: 500px;
   border-radius: 10px;
@@ -102,9 +103,7 @@ body {
 }
 
 @media (min-width: 200px) {
-  body {
-    height: 175vh;
-  }
+  
   .card {
     flex-direction: column;
     height: 960px;
@@ -141,9 +140,7 @@ body {
 }
 
 @media (min-width: 425px) {
-  body {
-    height: 125vh;
-  }
+ 
   .card {
     flex-direction: column;
     height: 1500px;
@@ -178,9 +175,7 @@ body {
 }
 
 @media (min-width: 530px) {
-  body {
-    height: 150vh;
-  }
+ 
   .card {
     height: 1000px;
     width: 250px;
@@ -212,9 +207,7 @@ body {
   }
 }
 @media (min-width: 768px) {
-  body {
-    height: 150vh;
-  }
+  
   .card {
     height: 1350px;
     width: 300px;
@@ -251,9 +244,7 @@ body {
 }
 
 @media (min-width: 992px) {
-  body {
-    height: 100vh;
-  }
+  
   .card {
     flex-direction: row;
     width: 1000px;
